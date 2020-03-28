@@ -1,6 +1,7 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import './App.css';
 
 export default class TopNav extends React.Component {
   constructor(props) {
@@ -19,16 +20,25 @@ export default class TopNav extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light toggleable color="info">
+        <Navbar className="nav" toggleable>
           <NavbarToggler right onClick={this.toggle} />
           <NavbarBrand href="/"> Stores</NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+            <NavItem>
+                <NavLink href="/components/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/">About Us</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/">Contact Us</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href="/components/">Profile</NavLink>
               </NavItem>
               <NavItem>
-               <Link to="/addToCart">Cart</Link>
+               <NavLink href="/addToCart">Cart</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

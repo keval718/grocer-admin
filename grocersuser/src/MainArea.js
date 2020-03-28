@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import PeopleCard from './PeopleCard';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 class MainArea extends Component {
   constructor() {
@@ -55,11 +57,15 @@ class MainArea extends Component {
       )
     })
     return (
+      <div>
+      
       <Container fluid>
         <Row>
           {peopleCards}
         </Row>
       </Container>
+      <Footer/>
+      </div>
     )
   }
 }
