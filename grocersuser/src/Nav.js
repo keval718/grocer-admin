@@ -40,6 +40,12 @@ export default class TopNav extends React.Component {
               <NavItem>
                <NavLink href="/addToCart">Cart</NavLink>
               </NavItem>
+              <NavItem>
+               <NavLink href="/register">Register</NavLink>
+              </NavItem>
+              <NavItem>
+               <NavLink href="/login">Login</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
