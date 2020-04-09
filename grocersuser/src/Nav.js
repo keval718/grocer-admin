@@ -26,7 +26,7 @@ export default class TopNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
             <NavItem>
-                <NavLink href="/components/">Home</NavLink>
+                <NavLink href="/Home">Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/components/">About Us</NavLink>
@@ -38,7 +38,7 @@ export default class TopNav extends React.Component {
                 <NavLink href="/components/">Profile</NavLink>
               </NavItem>
               <NavItem>
-               <NavLink href="/addToCart">Cart</NavLink>
+               <Link to="/addToCart">Cart</Link>
               </NavItem>
               <NavItem>
                <NavLink href="/register">Register</NavLink>
