@@ -1,7 +1,6 @@
 # project-client-team-jayambe
 project-client-team-jayambe created by GitHub Classroom
-  <body>	      
-                        
+  <body>	                  
             <h1> Grocers Admin </h1>	            
             <h2> Components</h2><br>	            
             create-store.component.js:-- Keval Shah<br>	            
