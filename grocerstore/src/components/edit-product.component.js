@@ -21,7 +21,7 @@ export default class EditProduct extends Component{
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/api/products/'+this.props.match.params.id)
+        axios.get('http://grocer-server.herokuapp.com/api/products/'+this.props.match.params.id)
           .then(response => {
             this.setState({
             pname:response.data.pname,

@@ -45,7 +45,7 @@ export default class Login extends Component{
         }
 
         axios
-      .post('http://localhost:5000/api/providers/Providerlogin', data)
+      .post('http://grocer-server.herokuapp.com/api/providers/Providerlogin', data)
       .then(response => {
         let decodeddata = decode(response.data.token);
         console.log(response.data.token);
