@@ -48,12 +48,12 @@ class Receipe extends Component{
         }
 
         console.log(add);
-        axios.post("http://localhost:5000/api/orders",add)
+        axios.post("http://grocer-server.herokuapp.com/api/orders",add)
         .then(res=>{
             console.log(res.data);
         })
        
-        axios.post("http://localhost:5000/api/mail/sendEmail",email).then(res=>{
+        axios.post("http://grocer-server.herokuapp.com/api/mail/sendEmail",email).then(res=>{
             window.confirm("Your Order is Placed and check your mail and show that mail to counter")
             window.location="/Home"
         })
