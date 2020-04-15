@@ -34,7 +34,7 @@ export default class StoreList extends Component
 
     }
     componentDidMount(){
-        axios.get('http://localhost:5000/api/Providers/display')
+        axios.get('http://grocer-server.herokuapp.com/api/Providers/display')
         .then(res=>{
             this.setState({
                 store:res.data
@@ -47,7 +47,7 @@ export default class StoreList extends Component
         
     }
     deleteStore(id) {
-      axios.delete('http://localhost:5000/api/Providers/deleteProvider/'+id)
+      axios.delete('http://grocer-server.herokuapp.com/api/Providers/deleteProvider/'+id)
         .then(response => { console.log(response.data)});
   
       this.setState({

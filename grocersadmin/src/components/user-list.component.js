@@ -32,7 +32,7 @@ export default class UserList extends Component
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/api/users')
+        axios.get('http://grocer-server.herokuapp.com/api/users')
         .then(res=>{
             this.setState({
                 user:res.data

@@ -40,7 +40,7 @@ export default class EditsStore extends Component
 
     }
     componentDidMount() {
-        axios.get('http://localhost:5000/api/Providers/display/'+this.props.match.params.id)
+        axios.get('http://grocer-server.herokuapp.com/api/Providers/display/'+this.props.match.params.id)
           .then(response => {
             this.setState({
             name:response.data.name,
@@ -149,7 +149,7 @@ export default class EditsStore extends Component
         }
         
        // console.log(store);
-        axios.post('http://localhost:5000/api/Providers/update/'+ this.props.match.params.id,store)
+        axios.post('http://grocer-server.herokuapp.com/api/Providers/update/'+ this.props.match.params.id,store)
         .then(res=>console.log(res.data));
         //this will send to home page
         //window.location="/";
