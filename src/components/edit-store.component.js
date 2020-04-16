@@ -40,7 +40,7 @@ export default class EditsStore extends Component
 
     }
     componentDidMount() {
-        axios.get('http://grocer-server.herokuapp.com/api/Providers/display/'+this.props.match.params.id)
+        axios.get('https://grocer-server.herokuapp.com/api/Providers/display/'+this.props.match.params.id)
           .then(response => {
             this.setState({
             name:response.data.name,

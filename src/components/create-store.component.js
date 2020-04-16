@@ -113,7 +113,7 @@ export default class CreateStore extends Component{
         }
         
        // console.log(store);
-        axios.post('http://grocer-server.herokuapp.com/api/Providers/addprovider',store)
+        axios.post('https://grocer-server.herokuapp.com/api/Providers/addprovider',store)
         .then(res=>console.log(res.data));
         //this will send to home page
         window.location="/storeList";
