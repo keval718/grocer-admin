@@ -139,7 +139,7 @@ export default class EditsStore extends Component
         }
         
        // console.log(store);
-        axios.post('http://grocer-server.herokuapp.com/api/Providers/update/'+ this.props.match.params.id,store)
+        axios.post('https://grocer-server.herokuapp.com/api/Providers/update/'+ this.props.match.params.id,store)
         .then(res=>console.log(res.data));
         //this will send to home page
         window.location="/storeList";
