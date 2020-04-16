@@ -10,9 +10,7 @@ const User = props => (
       <td>{props.store.province}</td> 
       <td>{props.store.country}</td> 
       <td>{props.store.phone}</td> 
-     
-      
-     
+
     </tr>
   )
 
